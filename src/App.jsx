@@ -3,11 +3,11 @@ import { Layout, Typography, Space } from 'antd';
 
 import {
   Navbar,
-  //   Exchanges,
-  //   Homepage,
-  //   Cryptocurrencies,
-  //   CryptoDetails,
-  //   News,
+  Exchanges,
+  Homepage,
+  Cryptocurrencies,
+  CryptoDetails,
+  News,
 } from './components';
 import './App.css';
 
@@ -22,19 +22,19 @@ const App = () => {
           <div className='routes'>
             <Switch>
               <Route exact path='/'>
-                {/* <Homepage /> */}
+                <Homepage />
               </Route>
               <Route exact path='/exchanges'>
-                {/* <Exchanges /> */}
+                <Exchanges />
               </Route>
               <Route exact path='/cryptocurrencies'>
-                {/* <Cryptocurrencies /> */}
+                <Cryptocurrencies />
               </Route>
               <Route exact path='/crypto/:coinId'>
-                {/* <CryptoDetails /> */}
+                <CryptoDetails />
               </Route>
               <Route exact path='/news'>
-                {/* <News /> */}
+                <News />
               </Route>
             </Switch>
           </div>
